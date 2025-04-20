@@ -4,10 +4,82 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AS Haute Couture</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #faf7f5;
+      color: #333;
+    }
+    header {
+      background-color: #bfa89e;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .about {
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .insta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .insta a {
+      display: inline-block;
+      background-color: #bfa89e;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenue sur AS Haute Couture</h1>
-  <p>Créations uniques & sur-mesure</p>
-  <p>Suivez-nous sur <a href="https://instagram.com/as.haute.couture" target="_blank">Instagram</a></p>
+  <header>
+    <img src="logo.png" alt="Logo AS Haute Couture" class="logo" />
+    <h1>AS Haute Couture</h1>
+    <p>Créations uniques et élégantes</p>
+  </header>
+
+  <section class="about">
+    <h2>À propos</h2>
+    <p>AS Haute Couture est une marque dédiée à l'élégance, au sur-mesure et au raffinement. Chaque pièce est pensée avec soin et passion.</p>
+  </section>
+
+  <section class="gallery">
+    <img src="photo1.jpg" alt="Création 1" />
+    <img src="photo2.jpg" alt="Création 2" />
+    <img src="photo3.jpg" alt="Création 3" />
+  </section>
+
+  <section class="insta">
+    <a href="https://instagram.com/as.haute.couture" target="_blank">Voir sur Instagram</a>
+  </section>
 </body>
 </html>
